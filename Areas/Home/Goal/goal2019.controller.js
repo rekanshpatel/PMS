@@ -1,0 +1,3 @@
+﻿myApp.controller('goal2019Controller', function ($scope) {
+    $scope.page_html = 'Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....Goal 2019 page containts....';
+});

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>PMS | Project Management System</title>
+    <script src="Angularlib/angular.js"></script>
+    <script src="Angularlib/angular-ui-router.js"></script>
+    <script src="Angularlib/ocLazyLoad.js"></script>
+    <script src="myApp.js"></script>
+    <script src="index.controller.js"></script>
+    <!--<script src="Areas/AboutUs/aboutus.controller.js"></script>-->
+    <script src="Areas/ContactUs/contactus.controller.js"></script>
+    <script src="Areas/Home/home.controller.js"></script>
+    <script src="Areas/Home/Company/company.controller.js"></script>
+    <script src="Areas/Home/Goal/goal.controller.js"></script>
+    <script src="Areas/Home/Goal/goal.route.js"></script>
+    <script src="Areas/Home/Goal/goal2017.controller.js"></script>
+    <script src="Areas/Home/Goal/goal2018.controller.js"></script>
+    <script src="Areas/Home/Goal/goal2019.controller.js"></script>
+    <style>
+        .header{
+            height:75px;
+            background-color:dodgerblue;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:large;
+        }
+        .menu{
+            clear:left;
+            float:left;
+            width:150px;
+            height:700px;
+            background-color:lightblue;
+        }
+        .contentMain{
+            float:inherit;
+            height:650px;
+            width:auto;
+        }
+        .inlineDiv{
+            float:left;
+            display:inline;
+            width:300px;
+        }
+        .pageHeader
+        {
+            font-family:'Times New Roman', Times, serif;
+            font-weight:bold;
+            background-color:cornflowerblue;
+            padding:5px;
+        }
+    </style>
+</head>
+<body ng-app="myApp" controller="indexController">
+    <div class="header">PMS</div>
+    <div class="menu">
+        <ul>
+            <li><a ui-sref="aboutUs">About Us</a></li>
+            <li><a ui-sref="contactUs">Contact Us</a></li>
+            <li><a ui-sref="home">Home</a>
+                <ul>
+                    <li><a ui-sref="home.company">Company</a></li>
+                    <li><a ui-sref="home.goal">Goal</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="contentMain">
+        <div ui-view></div>
+        <div ui-view="about"></div>
+    </div>
+    {{page_html}}
+</body>
+</html>

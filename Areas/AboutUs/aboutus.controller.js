@@ -1,0 +1,3 @@
+﻿myApp.controller('aboutUsController', function ($scope) {
+    $scope.page_html = 'About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....About us page containts....';
+});
